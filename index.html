@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Survey Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id=header>
+            <h1 id=title>The Odin Project Survey Form</h1>
+            <p id=description>Thank you for taking your time to help us improve the platform</p>
+        </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="bio" id="name-label" for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label class="bio" id="email-label" for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label class="bio" id="age-label" for="age">Age <span>(optional)</span></label>
+                <input name="age" id="age" type="number" placeholder="Age" min="1" max="150">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" required>
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend The Odin Project to a friend?</p>
+                <label class="button" for="definitely">Definitely
+                    <input id="definitely" name="recommend" type="radio" value="definitely"></label>
+                <label class="button" for="maybe">Maybe
+                    <input id="maybe" name="recommend" type="radio" value="maybe"></label>
+                <label class="button" for="notSure">Not sure
+                    <input id="notSure" name="recommend" type="radio" value="notSure"></label>
+            </div>
+            <div class="form-group">
+                <p>What is your favourite feature of The Odin Project?</p>
+                <select id="dropdown" name="feature" required>
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="contents">Contents</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label class="button" for="frontend">Front-end Projects
+                    <input id="frontend" name="frontend" type="checkbox"></label>
+                <label class="button" for="backend">Back-end Projects
+                    <input id="backend" name="backend" type="checkbox"></label>
+                <label class="button" for="contents">Contents
+                    <input id="contents" name="contents" type="checkbox"></label>
+                <label class="button" for="community">Open Source Community
+                    <input id="community" name="community" type="checkbox"></label>
+                <label class="button" for="videos">Videos
+                    <input id="videos" name="videos" type="checkbox"></label>
+                <label class="button" for="meetups">City Meetups
+                    <input id="meetups" name="meetups" type="checkbox"></label>
+                <label class="button" for="wiki">Wiki
+                    <input id="wiki" name="wiki" type="checkbox"></label>
+                <label class="button" for="forum">Forum
+                    <input id="forum" name="forum" type="checkbox"></label>
+                <label class="button" for="courses">Additional Courses
+                    <input id="courses" name="courses" type="checkbox"></label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        </form>
+    </div>
+</body>
+
+</html>
