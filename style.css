@@ -56,8 +56,9 @@ p {
     align-self: flex-start;
 }
 
-input[type="radio"] {
+.button input {
     align-self: baseline;
+    margin-right: 0.5rem;
 }
 
 textarea{
@@ -78,6 +79,7 @@ textarea{
     cursor: pointer;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.24);
 }
+
 
 /* Media Queries */
 @media (max-width: 600px) {
