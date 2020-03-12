@@ -59,6 +59,7 @@ p {
 .button input {
     align-self: baseline;
     margin-right: 0.5rem;
+    height: 1rem;
 }
 
 textarea{
